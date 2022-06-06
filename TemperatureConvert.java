@@ -1,42 +1,49 @@
+import java.util.Scanner;
+
 public class TemperatureConvert {
     public static void main(String[] args) {
 
-      //  Hint: use do while / while / scanner / int mode / int tempToConvert / int tempConverted / if statement / print statement
-
-//        Celsius-Fahrenheit
-//        Fahrenheit-Celsius
-//
-//        functions:
-//        f = (c*9/5)+32
-//        c = (f-32)*5/9
-//
-//        print(welcome and title)
-//                -----------------------------------Welcome------------------------------------------
-//                -----------------Celsius-Fahrenheit/Fahrenheit-Celsius converter--------------------
-//
-//        ask user to choose conversion mode
-//        choose the conversion mode:
-//        1- Celsius-Fahrenheit
-//        2- Fahrenheit-Celsius
-//                (handle case: user enters any different number)
-//
-//        Enter the temperature to convert:
-//
-//        value C ----> value F or value F ----> value C
-//
-//        do you want to convert other temperatures ? 1- Yes/2- No
-//                (handle case: user enters any different number)
-//
-//        if yes (do again - loop to line 15)
-//
-//        if no (print bye message)
-//                -----------------------------Good bye, see you soon----------------------------------
+        //  Hint: use do while / while / scanner / int mode / int tempToConvert / int tempConverted / if statement / print statement
 
 
+        System.out.println("-----------------------------------Welcome------------------------------------------");
+        System.out.println("-----------------Celsius-Fahrenheit/Fahrenheit-Celsius converter--------------------");
+        Scanner scan = new Scanner(System.in);
+        int mode;
 
+        do {
+            System.out.println("choose the conversion mode:");
+            System.out.println("1-Celsius-Fahrenheit");
+            System.out.println("2- Fahrenheit-Celsius ");
+            mode = scan.nextInt();
+            while (mode != 1 && mode != 2) {
+                System.out.println("invalid entry please enter 1 or 2");
+
+
+            }  if (mode == 1) {
+                    System.out.println("Enter the temperature to convert:");
+                    int tempToConvert = scan.nextInt();
+                    int formula = (tempToConvert * 9 / 5) + 32;
+                    System.out.println(tempToConvert + "C---------->" + formula + "F");
+                } else if (mode == 2) {
+                    System.out.println("Enter the temperature to convert:");
+                    int tempToConvert = scan.nextInt();
+                    int formula = (tempToConvert - 32) * 5 / 9;
+                    System.out.println(tempToConvert + "F---------->" + formula + "C");
+                }
+                System.out.println("do you want to convert other temperatures ? 1- Yes/2- No");
+                mode = scan.nextInt();
+
+
+            }
+            while (mode == 1) ;
+
+            System.out.println("-----------------------------Good bye, see you soon----------------------------------");
+
+
+        }
 
 
     }
 
 
-}
