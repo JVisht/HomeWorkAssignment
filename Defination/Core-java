@@ -42,7 +42,8 @@ A. An instances of a class is an object.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the entry point of an application?
-A.
+A. Application entry points are used to control users' access to different versions of an
+ application that is deployed on a platform.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Why main method is static?
@@ -55,28 +56,44 @@ A.The class named Object is the super class  in java.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is difference between path and classpath variables?
-A.
+A. PATH is the environment variable where we specify the locations of binaries.
+   Example: We add bin directory path of JDK or JRE, so that any binaries under the directory can be accessed
+    directly without specifying absolute path.
+
+   CLASSPATH is the path for Java application where the classes you compiled will be available.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between an Interface and Abstract class?
-A.Interface is a class that is not implemented ,keyword (implements) is use to run it.
- Whereas Abstract class
+
+A.Interface is a class that is not implemented ,it is just a pattern,An interface
+ can extends only another java interface.It cannot implement  another interface.An interface only accept static and
+ final variables . Whereas Abstract class unlike interfaces, are classes.You can define a behavior for them.An abstract
+ class can extends another abstract class and can implement multiple interfaces.An abstract accepts static, non static,
+ final and non final variables.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Can you make an Object from an Interface and Abstract class ? how do you use interface and abstract class?
-A.
+A. you cannot create  an object from an interface and abstract class,since they are incomplete class.To use interface
+and abstract class keyword (implements) Abstract class can implement interface.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Access Specifier?
-A.
+A.Access modifiers are keywords in object-oriented languages thats changing the behaviour of the class.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is OOP ? Define each feature of java OOP.
-A.
+A. OOP is knows as Object- Oriented Programming, there are 4 features
+1) abstraction : is perform to achieve security of the implementation, it hide certain details,abstract keyword  makes a
+ method abstract, they cannot be implemented ,abstract makes a class hybrid interface
+2) encapsulation :Its all about data hiding by making variable pvt, it has two conditions apply getter and setter method
+3) polymorphism : is method overloading  and method of overriding.
+4) Inheritance :Attribute class from another class,there are single inheritance,hierarchical inheritance,
+ multi level inheritance ,multiple inheritance
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Java Package and which package is imported by default?
-A.
+A. A package in Java is used to group related classes. Its as a folder in a file directory.
+We use packages to avoid name conflicts, and to write a better maintainable code.Java.lang package is imported by default
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is API? Name list of API that you have used so far.
@@ -84,15 +101,17 @@ A.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Does java support multiple inheritance?
-A.
+A. Multiple inheritance is not allowed in Java.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is method overloading and when it happens?
-A.
+A. Method overloading is when multiple method is in same class same data name but  with different parameters.It happens
+when method has to perform different task.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Explain exceptions in java and how to handle it?
-A.
+A. Exception is kind of an error ,this is generally unexpected or unwanted event, it can occur either in compile time
+ or run time. It can ve handled by throws keyword or try , catch keyword.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is static keyword in java? How it has been used in variables, methods and classes?
@@ -100,7 +119,7 @@ A.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is final and how it has been used variables, methods and classes?
-A.
+A.Final  is the keyword  when used ,the variable cannot be reassigned and class cant be inherited.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is final, finally and finalize?
@@ -108,80 +127,87 @@ A.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is a constructor ?
-A.
+A. A constructor is a block of code similar to method, implicitly called when the object is created.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Can we have multiple constructors in a class?
-A.
+A.  A class can have a multiple constructors.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. If we don't have a constructor declared, what is called during the object creation?
-A.
+A. Default constructor
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is "this" keyword in java ?
-A.
+A."this " keyword is to represent the current instance of class.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is "super" keyword in java? How to use it?
-A.
+A."super" keyword represents the current  instance of parent class
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is JVM stand for?
-A.
+A. Java virtual machine.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Is JVM platform independent?
-A.
+A. No, JVM platform is dependent.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What version of java are you using?
-A.
+A. openjdk 18.0.1 2022-04-19 (version)
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is JAR stand for?
-A.
+A.JAR stands for Java Archive.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between JDK and JVM?
-A.
+A. JDK (Java Development Kit): Use and write our code and run it, it compiles the java  source code whereas
+JVM: (Java virtual machine) converts bytecode to machine specific code
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between JVM and JRE?
-A.
+A. JVM (Java Virtual machine) coverts bytecode to machine specific code
+JRE (Java Runtime Environment) is a part of JDK  and executes Java program.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is compile time and run time?
-A.
-
+A.The compile-time errors are the errors which are produced at the compile-time, and they are detected by the compiler.
+And run time the compiler does not detect the error, so it cannot prevent the code from the execution.
+ eg : Syntax error is the compile error.And number divided by zero is a run time error.
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between String, StringBuffer and StringBuilder?
 A.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Singleton class?
-A.
+A.Singleton is a design pattern that ensures that a class can only have one object. To create a singleton class,
+a class must implement the following properties: Create a private constructor of the class to restrict object
+creation outside of the class.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between while and do..while loop?
-A.
+A. "while"  loop checks the condition first  and then executes the statement, wheres "do while" loop will execute the
+statement then checks the condition.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Enum?
-A.
+A.Enum, short for "enumerated," is a data type that consists of predefined values. Enums are used in
+both source code and database tables.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Iterator?
-A.
+A. An Iterator is an object that can be used to loop through collections like Arraylist and Hashset.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Which one will take more memory, an int or Integer?
-A.
+A. Integer will take more memory.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is JIT stands for?
-A.
+A. Just in Time.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Recursion?
-A.
+A. In Java, a method that calls itself is known as a recursive method. And, this process is known as recursion
