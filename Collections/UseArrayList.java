@@ -1,9 +1,9 @@
 package Collections;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class UseArrayList {
-
-
-
 
 
     /*
@@ -15,7 +15,26 @@ public class UseArrayList {
 
     public static void main(String[] args) {
 
-        //write your code here
+        ArrayList<Object>employees = new ArrayList<>();
+             employees.add("John");
+             employees.add("Ron");
+             employees.add("Eileen");
+              employees.add("Angy");
+              employees.add("Alex");
+              employees.add(" 13 ");
+              employees.add("Tom");
+            int i;
+            for ( i =0 ; i < employees.size();i++) {
+
+                System.out.println(employees.get(i));
+            }
+            employees.remove(5);
+        System.out.println(employees);
+            employees.add(5,"Ema");
+        Iterator newEmployees = employees.iterator();
+       while (newEmployees.hasNext()) {
+           System.out.println(newEmployees.next());
+       }
 
     }
 }

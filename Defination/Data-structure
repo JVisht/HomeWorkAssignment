@@ -14,35 +14,39 @@ A.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is an Array?
-A.
+A.An Array is a place holder that holds a fixed number of values of a single type.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between the Array and ArrayList?
-A.
+A. An Array is a fixed length data structure whereas ArrayList is a variable length Collection class.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is LinkedList?
-A.
+A. The LinkedList class is a collection which can contain many objects of the same type, just like the ArrayList.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. How is an ArrayList different from Linked List?
-A.
+A.An Arraylist is good for storing value ,but manipulating variables make the memory slow, whereas Linked list works
+same as ArrayList but manipulating variables will not make the memory slow
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between the HashTable and HashMap?
-A.
+A.HashMap allows one null key and multiple null values whereas Hashtable doesn't allow any null key or value.
+HashMap is generally preferred over HashTable if thread synchronization is not needed.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model?
-A.
-
+A.  RDBMS = Array (i.e. Array of structures)
+    Network data model = Graph
+    Hierarchical data model = Trees
 ------------------------------------------------------------------------------------------------------------------------
 Q. How HashMap works in java?
-A.
+A. Hashmap interface is an object that applies the concept of key /value .
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is ArrayIndexOutOfBoundsException in java? When it occurs?
-A.
+A. ArrayIndexOutOfBoundsException it  is a runtime exception in Java that occurs when an array is accessed with an
+unidentified index.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What are the different ways of copying an array into another array?
