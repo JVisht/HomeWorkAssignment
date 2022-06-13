@@ -6,11 +6,16 @@ and modify it efficiently.
 
 ------------------------------------------------------------------------------------------------------------------------
 What are the various operations that can be performed on different Data Structures?
-A.
-
+A.Insertion
+  Deletion
+  Traversal
+  Searching
+  Sorting
 ------------------------------------------------------------------------------------------------------------------------
 Q. List out the areas in which data structures are applied extensively?
-A.
+A. Data structure is important in almost every aspect where data is involved.The areas in which data structure
+are applied  are Compiler Design, Operating System, Database Management System, Statistical analysis package,
+Numerical Analysis, Graphics, Artificial Intelligence, Simulation.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is an Array?
@@ -50,4 +55,7 @@ unidentified index.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What are the different ways of copying an array into another array?
-A.
+A. Manually.
+   Arrays.copyOf
+   System.arraycopy
+   Object.clone

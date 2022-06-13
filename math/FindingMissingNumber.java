@@ -6,7 +6,7 @@ public class FindingMissingNumber {
     public static void main(String[] args) {
 
 
-        int n[] = {10, 2, 1, 4, 5, 3, 7, 8, 6};
+        int [] n = {10, 2, 1, 4, 5, 3, 7, 8, 6};
 
         int sum1 = 0;
         for (int i = 0; i < n.length;i++) {

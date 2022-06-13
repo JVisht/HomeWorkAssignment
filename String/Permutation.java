@@ -9,13 +9,4 @@ public class Permutation {
      *
      */
 
-    public static void main(String[] args) {
-
-        //run your code here
-
-
-    }
 }
-
-
-

@@ -25,14 +25,13 @@ public class UseArrayList {
               employees.add("Tom");
             int i;
             for ( i =0 ; i < employees.size();i++) {
-
                 System.out.println(employees.get(i));
             }
             employees.remove(5);
         System.out.println(employees);
             employees.add(5,"Ema");
         Iterator newEmployees = employees.iterator();
-       while (newEmployees.hasNext()) {
+           while (newEmployees.hasNext()) {
            System.out.println(newEmployees.next());
        }
 

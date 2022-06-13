@@ -1,5 +1,7 @@
 package math;
 
+import java.math.BigInteger;
+
 public class PrimeNumber {
 
 
@@ -13,7 +15,34 @@ public class PrimeNumber {
 
     public static void main(String[] args) {
 
-        //write your code here
+        int collection= 0;
+        int i = 1;
+        int j = 1;
+        int n = 0;
+
+        while (n< 1000) {
+            j = 1;
+            collection = 0;
+
+            while (j <= i) {
+                if (i % j == 0) {
+                    collection++;
+                    j++;
+                }
+            } if (collection == 2) {
+
+                    System.out.printf("%d ", i);
+                    n++;
+                }
+                i++;
+
+
+
+
+
+
+        }
+
 
     }
 }

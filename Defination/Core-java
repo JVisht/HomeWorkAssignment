@@ -28,7 +28,7 @@ A.1.Eclipse.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Explain the entire java life cycle.
-A.
+A. Source code->Java Compiler->Java Virtual machine
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is class?
@@ -115,7 +115,8 @@ A. Exception is kind of an error ,this is generally unexpected or unwanted event
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is static keyword in java? How it has been used in variables, methods and classes?
-A.
+A. Static is a keyword which is used to share the same variable or method of a given class.It means that the static
+object belongs specifically to the class.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is final and how it has been used variables, methods and classes?
@@ -123,7 +124,8 @@ A.Final  is the keyword  when used ,the variable cannot be reassigned and class 
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is final, finally and finalize?
-A.
+A.Final is a keyword and is used as access modifier in Java. Finally is a block in Java used for Exception Handling.
+Finalize is a method in Java used for Garbage Collection
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is a constructor ?
